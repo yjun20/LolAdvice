@@ -1,8 +1,65 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100vw;
+  height:100vh;
+  margin: 0;
+  padding: 0;
+  /* padding: 2rem; */
   text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction : column;
+  /* gap: 10px; */
+  height:100%;
+  width:100%;
+  /* position: relative; */
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  background-color: lightcoral;
+  width: 100%;
+  padding: 20px;
+  /* position: fixed: */
+  flex:1;
+  top: 0;
+  left:0;
+  right:0;
+  z-index : 10;
+}
+.banner {
+  position: relative;
+  background-color: black;
+  flex:10;
+  align-items: center;
+  width:100%;
+  margin: 0;
+  
+  /* top: 0; */
+  /* left:0; */
+  /* right:0; */
+}
+.champContainer {
+  display:flex;
+  justify-content: space-between;
+  padding:20px;
+
+}
+.champName {
+  flex:1;
+  max-width:30%;
+  flex-direction:column;
+  color: white;
+  display: flex;
+  align-items:center;
+  text-align:center;
+}
+.champImage {
+  width: 100%;
+  height: auto;
+  max-height:100%;
+  object-fit:contain;
+
 }
 
 .logo {
